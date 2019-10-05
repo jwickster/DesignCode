@@ -10,6 +10,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+    ZStack {
+        VStack {
+            Text("Card Back")
+        }
+        .frame(width: 340, height: 220.0)
+        .background(Color.blue)
+        .cornerRadius(10)
+        .shadow(radius: 20)
+        .offset(x: 0, y: -20)
+        
+        
         VStack() {
             HStack {
                 VStack (alignment: .leading){
@@ -33,9 +44,11 @@ struct ContentView: View {
         .background(Color.black)
         .cornerRadius(10)
         .shadow(radius: 20)
-            
+        
+        
         }
     }
+}
 
 
 struct ContentView_Previews: PreviewProvider {
